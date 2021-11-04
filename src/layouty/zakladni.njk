@@ -10,9 +10,9 @@
 	</head>
 	<body>
 		<div class="layout">
-			{% include "hlavicka.njk" %}
+			{% include "hlavicka.njk" %}  {# se nasosává ze složky části, proto include #}
 			<main class="telo">
-				{{ content | safe }}
+				{{ content | safe }} {# v tagu main musí být vložen v dvojtých uvozovkách content, kam se nasosávají njk soubory ze src #}
 			</main>
 			{% include "paticka.njk" %}
 		</div>

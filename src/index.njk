@@ -1,7 +1,17 @@
 ---
 layout: zakladni
+nadpis: Úvodní stránka
+text: ahoj
 ---
 
-<h2>Úvodní stránka</h2>
+<h2>{{ nadpis }}</h2>
+
+<p>{{text}}</p>
+<p>{{text}}</p>
+<p>{{text}}</p>
+<p>{{text}}</p>
+
+{% include "vypis-novinek.njk" %}
+
 
 <img src="/obrazky/uvod.jpg" width="1920" height="1080" alt="Singapur">

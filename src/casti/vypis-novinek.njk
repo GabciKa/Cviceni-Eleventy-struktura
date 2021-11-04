@@ -1,0 +1,7 @@
+<ul class="vypis-novinek">
+
+    {% for zprava in novinky %} {# tzn. projdi všechny novinky v souboru novinky.json, každou zvlášť ulož do proměnné zpráva #}
+        <li class="vypis-novinek__polozka">{{ zprava.titulek }} (<time class="vypis-novinek__datum">{{ zprava.datum }}</time>)</li> {# a tady pomocí toho {{zprava.titulek}} už používám titulek z té proměnné zpráva #}
+    {% endfor %}
+    
+</ul>
